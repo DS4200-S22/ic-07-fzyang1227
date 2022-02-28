@@ -132,7 +132,7 @@ svg1.selectAll(".bar")
 */
 
 // get data from csv
-d3.csv("/data/barchart.csv").then((data) => {
+d3.csv("data/barchart.csv").then((data) => {
 
   // get the max score from the data
   let maxY2 = d3.max(data, function(d) { return d.score; });

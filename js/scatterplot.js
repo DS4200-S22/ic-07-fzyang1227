@@ -43,7 +43,7 @@ const mouseleave2 = function(event, d) {
 
 
 
-d3.csv("/data/scatter.csv").then((data) => {
+d3.csv("data/scatter.csv").then((data) => {
 
   // find max X
   let maxX3 = d3.max(data, (d) => { return d.day; }); 
